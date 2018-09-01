@@ -1,7 +1,5 @@
 body {
     font-family: 'Monserrat', sans-serif;
-    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(120, 255, 120));
-    color: #FFF;
 }
 
 ul {
@@ -24,5 +22,54 @@ a {
 
 .row {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    flex-grow: 1;
+}
+
+.discography-section {
+    background: linear-gradient(45deg, rgb(172, 250, 162), rgb(16, 109, 16));
+}
+
+.album-text {
+    text-align: center;
+}
+
+.one {
+    flex: 1 1 auto;
+}
+
+.two {
+    flex: 1 1 auto;
+}
+
+.three {
+    flex: 1 1 auto;
+}
+
+.four {
+    flex: 1 1 auto;
+}
+
+.five {
+    flex: 1 1 auto;
+}
+
+.six {
+    flex: 1 1 auto;
+}
+
+.seven {
+    flex: 1 1 auto;
+}
+
+.eight {
+    flex: 1 1 auto;
+}
+
+.nine {
+    flex: 1 1 auto;
+}
+
+.ten {
+    flex: 1 1 auto;
 }
