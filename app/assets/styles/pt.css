@@ -5,71 +5,79 @@ body {
 ul {
     margin: 0;
     padding: 0;
-    float: right;
 }
 
 li {
     list-style: none;
     display: inline-block;
+    padding-right: 7px;
+}
 
+li:last-child {
+    padding-right: 0;
 }
 
 a {
     text-decoration: none;
     display: block;
-    padding: 5px 8px;
 }
 
-.row {
-    display: inline-flex;
-    flex-flow: row wrap;
-    flex-grow: 1;
+img {
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary-nav {
+    padding-top: 10px;
+}
+
+.main-heading {
+    /* flex-shrink: 1; allows item to shrink if container is too small, higher numbers = smaller item */
+}
+
+.nav-div {
+}
+
+.bio-section {
+    background-color: #1b1b1b;
+    color: #FFF;
+    padding: 25px;
 }
 
 .discography-section {
-    background: linear-gradient(45deg, rgb(172, 250, 162), rgb(16, 109, 16));
+    background-color: rgb(170, 170, 170);
+    padding: 25px;
 }
 
-.album-text {
-    text-align: center;
+.row {
+    display: flex; /* flex container, flex-direction default = row */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: solid 5px #1b1b1b;
 }
 
-.one {
-    flex: 1 1 auto;
+.album {
+    display: table;
+    margin: 0;
 }
 
-.two {
-    flex: 1 1 auto;
+.album img {
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+    display: block; /* responsive images */
+    height: auto;
 }
 
-.three {
-    flex: 1 1 auto;
+.album-caption {
+    display: table-caption;
+    caption-side: bottom;
 }
 
-.four {
-    flex: 1 1 auto;
-}
-
-.five {
-    flex: 1 1 auto;
-}
-
-.six {
-    flex: 1 1 auto;
-}
-
-.seven {
-    flex: 1 1 auto;
-}
-
-.eight {
-    flex: 1 1 auto;
-}
-
-.nine {
-    flex: 1 1 auto;
-}
-
-.ten {
-    flex: 1 1 auto;
+.album:hover {
+    transform: scale(1.2);
 }
