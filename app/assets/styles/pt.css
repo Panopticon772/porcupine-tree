@@ -3,81 +3,30 @@ body {
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
 }
 
 li {
-    list-style: none;
-    display: inline-block;
-    padding-right: 7px;
-}
-
-li:last-child {
-    padding-right: 0;
+    display: inline;
 }
 
 a {
     text-decoration: none;
-    display: block;
+    color: green;
 }
 
-img {
-    
+#navbar {
+    background-color: #888888;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
+#biography {
+    background-color: #636363
 }
 
-.primary-nav {
-    padding-top: 10px;
+#discography {
+    background-color: #a0a0a0;
 }
 
-.main-heading {
-    /* flex-shrink: 1; allows item to shrink if container is too small, higher numbers = smaller item */
-}
-
-.nav-div {
-}
-
-.bio-section {
-    background-color: #1b1b1b;
-    color: #FFF;
-    padding: 25px;
-}
-
-.discography-section {
-    background-color: rgb(170, 170, 170);
-    padding: 25px;
-}
-
-.row {
-    display: flex; /* flex container, flex-direction default = row */
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    border: solid 5px #1b1b1b;
-}
-
-.album {
-    display: table;
-    margin: 0;
-}
-
-.album img {
-    height: 100px;
-    width: 100px;
-    max-width: 100%;
-    display: block; /* responsive images */
-    height: auto;
-}
-
-.album-caption {
-    display: table-caption;
-    caption-side: bottom;
-}
-
-.album:hover {
-    transform: scale(1.2);
+.generic-content-container--inner-content-band {
+    text-align: center;
 }
