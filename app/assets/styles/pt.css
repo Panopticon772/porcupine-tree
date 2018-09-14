@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Monserrat', sans-serif;
+    padding: 20px;
+    background-color: #919191;
 }
 
 ul {
@@ -15,6 +21,10 @@ a {
     color: green;
 }
 
+img {
+    width: 100%;
+}
+
 #navbar {
     background-color: #888888;
 }
@@ -27,6 +37,60 @@ a {
     background-color: #a0a0a0;
 }
 
-.generic-content-container--inner-content-band {
-    text-align: center;
+.row {
+    margin: 8px -5px;
+}
+
+/* padding between each col */
+.row, .row > .column {
+    padding: 8px;
+}
+
+/* padding between each col */
+.row, .row > .column--disco {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+.column--disco {
+    float: left;
+    width: 20%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content band */
+.content--band {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Content disco */
+.content--disco {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
