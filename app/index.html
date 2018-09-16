@@ -6,24 +6,20 @@
     <meta name="description" content="A fan designed Porcupine Tree web page.">
     <link rel="stylesheet" type="text/css" href="assets/styles/pt.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- <div id="background"></div> potential bg img -->
-    <div id="navbar">
-        <header>
-            <div id="title" class="header">
-                <div id="band-title"><h1>Porcupine Tree</h1></div>
-                <nav class="nav-text">
-                    <ul>
-                        <li><a href="#biography">Biography</a></li>
-                        <li><a href="#band">Band</a></li>
-                        <li><a href="#discography">Discography</a></li>
-                    </ul>
-                </nav> 
-            </div> 
-        </header>
-    </div>
+    <nav class="top-nav" id="my-top-nav">
+        <a href="#pt" class="active">Porcupine Tree</a>
+        <a href="#biography">Biography</a>
+        <a href="#band">Band</a>
+        <a href="#discography">Discography</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleLinks()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
 
     <section id="biography" class="generic-content-container">
             <div class="generic-content-container--inner-content">
@@ -44,7 +40,7 @@
             <div class="content--band">
                 <img src="assets/images/steven-wilson.jpg">
                 <h3>Steven Wilson</h3>
-                <p>Main driving force, lead vocals, guitar, production, mixing, mastering</p>
+                <p>Vocals, guitar</p>
             </div>
         </div>
 
@@ -74,11 +70,11 @@
     </div>
 
     <div class="row">
-        <h2>Discography</h2>
+        <h2 id="discography">Discography</h2>
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/On_the_Sunday_of_Life..." target="_blank"><img src="assets/images/Porcupine_tree_on_the_sunday_of_life.jpg" alt="Album cover of On the Sunday of Life...">
-                <h3>On the Sunday of Life...</h3>
+                
                 </a>
             </div>
         </div>
@@ -86,7 +82,7 @@
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/Up_the_Downstair" target="_blank"><img src="assets/images/up_the_downstair.jpg" alt="Album cover of Up the Downstair">
-                <h3>Up the Downstair</h3>
+                
                 </a>
             </div>
         </div>
@@ -94,7 +90,7 @@
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/The_Sky_Moves_Sideways" target="_blank"><img src="assets/images/Porcupine_tree_the_sky_moves_sideways.jpg" alt="Album cover of The Sky Moves Sideways">
-                <h3>The Sky Moves Sideways</h3>
+                
                 </a>
             </div>
         </div>
@@ -102,7 +98,7 @@
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/Signify" target="_blank"><img src="assets/images/Porcupine_tree_signify.jpg" alt="Album cover of Signify">
-                <h3>Signify</h3>
+                
                 </a>
             </div>
         </div>
@@ -110,7 +106,7 @@
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/Stupid_Dream" target="_blank"><img  src="assets/images/stupid-dream-pt.jpg"alt="Album cover of Stupid Dream">
-                <h3>Stupid Dream</h3>
+                
                 </a>
             </div>
         </div>
@@ -118,29 +114,31 @@
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/Lightbulb_Sun" target="_blank"><img src="assets/images/pt-lightbulb.jpg" alt="Albumcover of Lightbulb Sun">
-                <h3>Lightbulb Sun</h3></a>
+                </a>
             </div>
         </div>
 
         <div class="column--disco">
             <div class="content--disco">
-                <a href="https://en.wikipedia.org/wiki/In_Absentia" target="_blank"><img src="assets/images/200px-Porcupine_tree_in_absentia.jpg" alt="Album cover of In Absentia"></a>
-                <h3>Up the Downstair</h3>
+                <a href="https://en.wikipedia.org/wiki/In_Absentia" target="_blank"><img src="assets/images/200px-Porcupine_tree_in_absentia.jpg" alt="Album cover of In Absentia">
+                
+                </a>
+                
             </div>
         </div>
 
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/Deadwing" target="_blank"><img src="assets/images/pt-deadwing.jpg" alt="Album cover of Deadwing">
-                <h3>Deadwing</h3>
-            </a>
+                
+                </a>
             </div>
         </div>
 
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/Fear_of_a_Blank_Planet" target="_blank"><img src="assets/images/pt-fear.jpg"alt="Album cover of Fear of a Blank Planet">
-                <h3>Fear of a Blank Planet</h3>
+                
                 </a>
             </div>
         </div>
@@ -148,7 +146,7 @@
         <div class="column--disco">
             <div class="content--disco">
                 <a href="https://en.wikipedia.org/wiki/The_Incident_(album)" target="_blank"><img src="assets/images/pt-incident.jpg"alt="Album cover of The Incident">
-                <h3>The Incident</h3>
+                
                 </a>
             </div>
         </div>
@@ -157,4 +155,6 @@
     <footer>
         Social icons
     </footer>
+
+    <script src="assets/scripts/pt.js"></script>
 </body>    
