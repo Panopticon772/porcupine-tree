@@ -43,12 +43,8 @@ p {
     font-size: 0.85em;
 }
 
-img {
-    width: 100%;
-}
-
 a {
-    color: rgb(196, 30, 30);
+    color: rgb(230, 21, 21);
     text-decoration: none;
 }
 
@@ -63,6 +59,8 @@ a {
 
 .logo {
     margin-left: 5%;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.2em;
 }
 
 nav {
@@ -91,12 +89,31 @@ li a:hover {
 }
 
 .band-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.band-img--wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+/* bio section */
+.bio-title {
+    padding-bottom: 1.0em;
+}
+
+.bio-container {
+    padding: 0 1.5em;
 }
 
 /* band section grid */
 .band-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     margin-top: 30px;
     justify-content: center;
@@ -110,6 +127,7 @@ li a:hover {
 .member-img {
     display: block;
     width: 47vw;
+    border-radius: 50%;
 }
 
 .band-info {
@@ -122,15 +140,47 @@ li a:hover {
     margin-top: 2px;
 }
 
-footer {
-    background-color: #FFF;
-    text-align: center;
-    padding: 20px;
+/* disco grid */
+.disco-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin-top: 30px;
+    justify-content: center;
 }
 
-.footer--info a {
-    color: rgb(231, 15, 15);
+.album {
+    width: 47vw;
+    margin: 0 auto 15px;
+}
+
+.album-img {
+    display: block;
+    width: 47vw;
+    border-radius: 10%;
+}
+
+/* footer */
+footer {
+    background: #867154;
+    padding: 3.3em;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.7em;
+    font-weight: 300;
+    color: #A4A4A4;
+    line-height: 130%;
+}
+
+footer p a {
     text-decoration: none;
+    color: rgb(228, 22, 22);
+}
+
+.footer--text {
+    padding: 1.1em;
 }
 
 .social-icons {
@@ -147,17 +197,40 @@ footer {
 /* navbar when screen is larger than 600px */
 @media screen and (min-width : 600px) {
     .band-grid {
-        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-columns: 50% 50%;
         margin-top: 54px;
     }
 
     .member {
         width: 31vw;
         margin: 0 auto 45px;
+        transition: transform .2s;
+    }
 
+    .member:hover {
+        transform: scale(1.1);
     }
 
     .member-img {
+        width: 31vw;
+    }
+
+    .disco-grid {
+        grid-template-columns: 50% 50%;
+        margin-top: 54px;
+    }
+
+    .album {
+        width: 31vw;
+        margin: 0 auto 45px;
+        transition: transform .2s;
+    }
+
+    .album:hover {
+        transform: scale(1.1);
+    }
+
+    .album-img {
         width: 31vw;
     }
 
@@ -182,7 +255,7 @@ footer {
 
 @media screen and (min-width : 1200px) {
     body {
-        max-width: 1200px;
+        max-width: 1920px;
         margin: auto;
     }
 
@@ -191,6 +264,14 @@ footer {
     }
 
     .member-img {
+        width: 370px;
+    }
+
+    .album {
+        width: 370px;
+    }
+
+    .album-img {
         width: 370px;
     }
 }

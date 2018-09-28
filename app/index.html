@@ -26,19 +26,24 @@
         </nav>
     </header>
 
-    <div class="band-img">
-        <img src="assets/images/pt-band.jpg">
+    <div class="band-img--wrapper">
+        <picture>
+            <source srcset="assets/images/pt-band--large.jpg 1920w" media="(min-width: 1380px)">
+            <source srcset="assets/images/pt-band--medium.jpg 1380w" media="(min-width: 990px)">
+            <source srcset="assets/images/pt-band--small.jpg 990w" media="(min-width: 640px)">
+            <img srcset="assets/images/pt-band--smallest.jpg 640w" class="band-img" alt="Picture of the band">
+        </picture>
     </div>
 
     <section id="biography">
-        <h1>Biography</h1>
-        <div>
+        <h1 class="bio-title">Biography</h1>
+        <div class="bio-container">
             <p>Porcupine Tree were an English rock band formed by musician Steven Wilson in 1987. The band began essentially as a solo project for Wilson, who created all of the band's music. By late 1993, however, he wanted to work in a band environment, bringing on frequent collaborators Richard Barbieri as keyboardist, Colin Edwin as bassist, and Chris Maitland as drummer to form the first permanent lineup. With Wilson as lead vocalist and guitarist, this remained the lineup until February 2002, when Maitland left the band and Gavin Harrison was recruited to replace him.</p>
-        
+            <br/>
             <p>Porcupine Tree's early sound evoked a style of psychedelic rock comparable to that of progressive rock band Pink Floyd. Upon signing with Kscope record label in the late 1990s, the band approached a more mainstream alternative rock sound. By the early 2000s, the band had signed to a major record label and shifted their sound again, this time in a more progressive metal direction.</p>
-                            
+            <br/>         
             <p>After the release and tour in support of their tenth studio album, The Incident, their biggest commercial success to date, the band became inactive as Wilson committed himself to his solo work, and other members began working on their own separate projects. Wilson hasn't ruled out a reformation, but has no particular plans for it either.</p>
-                            
+            <br/>               
             <p>During a career spanning more than 20 years, Porcupine Tree earned critical acclaim from critics and fellow musicians, developed a cult following, and became an influence for new artists. However, their work mostly stayed away from mainstream music, being described by publications such as Classic Rock and PopMatters as "the most important band you’d never heard of."</p>
         </div>
     </section>
@@ -51,7 +56,7 @@
         <div class="member">
             <img src="assets/images/steven-wilson.jpg" class="member-img" alt="Steven Wilson">
             <div class="band-info">
-                <h3>Steven Wilson</h3>
+                <h3>Steven_Wilson</h3>
                 <p>Mastermind, vocals, guitar</p>
             </div>
         </div>
@@ -59,7 +64,7 @@
         <div class="member">
             <img src="assets/images/richard-barbieri.jpg" class="member-img" alt="Richard Barbieri">
             <div class="band-info">
-                <h3>Richard Barbieri</h3>
+                <h3>Richard_Barbieri</h3>
                 <p>Keyboards</p>
             </div> 
         </div>
@@ -67,7 +72,7 @@
         <div class="member">
             <img src="assets/images/colin-edwin.jpg" class="member-img" alt="Colin Edwin">
             <div class="band-info">
-                <h3>Colin Edwin</h3>
+                <h3>Colin_Edwin</h3>
                 <p>Bass</p>
             </div>
         </div>
@@ -75,7 +80,7 @@
         <div class="member">
             <img src="assets/images/gavin-harrison.jpg" class="member-img" alt="Gavin Harrison">
             <div class="band-info">
-                <h3>Gavin Harrison</h3>
+                <h3>Gavin_Harrison</h3>
                 <p>Drums</p>
             </div>
         </div>
@@ -85,62 +90,60 @@
         <h1>Discography</h1>
     </div>
 
-    <div class="disco-grid">
+    <section class="disco-grid">
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/On_the_Sunday_of_Life..." target="_blank"><img src="assets/images/Porcupine_tree_on_the_sunday_of_life.jpg" alt="Album cover of On the Sunday of Life...">
+            <a href="https://en.wikipedia.org/wiki/On_the_Sunday_of_Life..." target="_blank"><img src="assets/images/Porcupine_tree_on_the_sunday_of_life.jpg" class="album-img" alt="Album cover of On the Sunday of Life...">
             </a>
         </div>
 
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/Up_the_Downstair" target="_blank"><img src="assets/images/up_the_downstair.jpg" alt="Album cover of Up the Downstair">
+            <a href="https://en.wikipedia.org/wiki/Up_the_Downstair" target="_blank"><img src="assets/images/up_the_downstair.jpg" class="album-img" alt="Album cover of Up the Downstair">
             </a>
         </div>
         
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/The_Sky_Moves_Sideways" target="_blank"><img src="assets/images/Porcupine_tree_the_sky_moves_sideways.jpg" alt="Album cover of The Sky Moves Sideways">
+            <a href="https://en.wikipedia.org/wiki/The_Sky_Moves_Sideways" target="_blank"><img src="assets/images/Porcupine_tree_the_sky_moves_sideways.jpg" class="album-img" alt="Album cover of The Sky Moves Sideways">
             </a>
         </div>
         
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/Signify" target="_blank"><img src="assets/images/Porcupine_tree_signify.jpg" alt="Album cover of Signify">
+            <a href="https://en.wikipedia.org/wiki/Signify" target="_blank"><img src="assets/images/Porcupine_tree_signify.jpg" class="album-img" alt="Album cover of Signify">
             </a>
         </div>
         
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/Stupid_Dream" target="_blank"><img  src="assets/images/stupid-dream-pt.jpg" alt="Album cover of Stupid Dream">
+            <a href="https://en.wikipedia.org/wiki/Stupid_Dream" target="_blank"><img  src="assets/images/stupid-dream-pt.jpg" class="album-img" alt="Album cover of Stupid Dream">
             </a>
         </div>
-    </div>
 
-    <div class="grid--disco">
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/Lightbulb_Sun" target="_blank"><img src="assets/images/pt-lightbulb.jpg" alt="Albumcover of Lightbulb Sun">
+            <a href="https://en.wikipedia.org/wiki/Lightbulb_Sun" target="_blank"><img src="assets/images/pt-lightbulb.jpg" class="album-img" alt="Albumcover of Lightbulb Sun">
             </a>
         </div>
                     
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/In_Absentia" target="_blank"><img src="assets/images/200px-Porcupine_tree_in_absentia.jpg" alt="Album cover of In Absentia">
+            <a href="https://en.wikipedia.org/wiki/In_Absentia" target="_blank"><img src="assets/images/200px-Porcupine_tree_in_absentia.jpg" class="album-img" alt="Album cover of In Absentia">
             </a>
         </div>
                     
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/Deadwing" target="_blank"><img src="assets/images/pt-deadwing.jpg" alt="Album cover of Deadwing">
+            <a href="https://en.wikipedia.org/wiki/Deadwing" target="_blank"><img src="assets/images/pt-deadwing.jpg" class="album-img" alt="Album cover of Deadwing">
             </a>
         </div>
                     
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/Fear_of_a_Blank_Planet" target="_blank"><img src="assets/images/pt-fear.jpg" alt="Album cover of Fear of a Blank Planet">
+            <a href="https://en.wikipedia.org/wiki/Fear_of_a_Blank_Planet" target="_blank"><img src="assets/images/pt-fear.jpg" class="album-img" alt="Album cover of Fear of a Blank Planet">
             </a>
         </div>
                     
         <div class="album">
-            <a href="https://en.wikipedia.org/wiki/The_Incident_(album)" target="_blank"><img src="assets/images/pt-incident.jpg" alt="Album cover of The Incident">
+            <a href="https://en.wikipedia.org/wiki/The_Incident_(album)" target="_blank"><img src="assets/images/pt-incident.jpg" class="album-img" alt="Album cover of The Incident">
             </a>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <div class="footer--info">
+        <div class="footer--text">
             <p>Copyright &copy; 2018 - Christopher Stepowski - All rights reserved.</p>
             <p>Information taken from <a href="https://en.wikipedia.org/wiki/Porcupine_Tree" target="_blank">Wikipedia</a></p>
         </div>
