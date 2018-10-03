@@ -4,24 +4,19 @@
     padding: 0;
 }
 
-html {
-    background: #F2F2F2;
-}
-
 body {
     font-family: "Monserrat", sans-serif;
     font-size: 1em;
-    color: #000;
+    color: #fff;
     max-width: 1920px;
-    background: white;
-    margin: auto;
+    background: #4abdac;
 }
 
 h1 {
     font-family: "Oswald", sans-serif;
     font-size: 1.4em;
     font-weight: 200;
-    color: rgb(64, 160, 0);
+    color: #f7b733;
     padding-top: 1.5em;
     text-align: center;
     letter-spacing: 2px;
@@ -46,7 +41,7 @@ p {
 }
 
 a {
-    color: rgb(64, 160, 0);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -55,7 +50,7 @@ a {
 .header-container {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid #dfdce3;
     padding: 2.3em 0;
 }
 
@@ -66,7 +61,7 @@ a {
 }
 
 .logo span {
-    color: #6b0404;
+    color: #f7b733;
 }
 
 nav {
@@ -77,21 +72,22 @@ header ul li {
     display: inline;
     padding: 0 1.4em 0 0;
     font-size: 0.9em;
+    text-shadow: 1px 1px 1px #000;
 }
 
 header ul li a {
     text-decoration: none;
-    color:rgb(105, 105, 105);
+    color:#fff;
 }
 
 li a.active {
-    color: #000000;
-    border-bottom: 2px solid #000000;
+    color: #fff;
+    border-bottom: 2px solid #fc4a1a;
     font-weight: 300;
 }
 
 li a:hover {
-    color: #B6B6B6;
+    color: #fc4a1a;
 }
 
 .band-img {
@@ -100,7 +96,7 @@ li a:hover {
     top: 0;
     width: 100%;
     height: auto;
-    outline: 0.1em solid rgb(64, 160, 0);
+    outline: 0.1em solid #fc4a1a;
 }
 
 .band-img--wrapper {
@@ -115,7 +111,6 @@ li a:hover {
 
 .bio-container {
     padding: 0 1.5em;
-    
 }
 
 /* band section grid */
@@ -135,20 +130,24 @@ li a:hover {
 .member-img {
     display: block;
     width: 47vw;
-    border: 0.2em solid rgb(64, 160, 0);
+    border: 0.2em solid #fff;
     border-radius: 50%;
 }
 
 .band-info {
     margin-top: 13px;
-    border: 1px solid #000;
-    border-radius: 5%;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.band-info h3 span {
+    color:#f7b733;
 }
 
 .band-info p {
     font-size: 0.85em;
     font-weight: 500;
     margin-top: 2px;
+    color: #fff;
 }
 
 /* disco grid */
@@ -173,7 +172,6 @@ li a:hover {
 
 /* footer */
 footer {
-    background: #6b0404;
     padding: 2.0em;
     text-align: center;
 }
@@ -181,13 +179,13 @@ footer {
 footer p {
     font-size: 0.7em;
     font-weight: 300;
-    color: #A4A4A4;
+    color: #E7DFDD;
     line-height: 130%;
 }
 
 footer p a {
     text-decoration: none;
-    color: rgb(64, 160, 0);
+    color: #E7DFDD;
 }
 
 .footer--text {
@@ -198,7 +196,7 @@ footer p a {
 }
 
 .social-icons a {
-    color: rgb(64, 160, 0);
+    color: #A239CA;
     text-decoration: none;
     padding-right: 10px;
 }
@@ -212,7 +210,7 @@ footer p a {
 }
 
 .to-top i {
-    color: rgb(64, 160, 0);
+    color: #A239CA;
     padding: 0.2em;
 }
 
@@ -290,6 +288,14 @@ footer p a {
     body {
         max-width: 1920px;
         margin: auto;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1.2em;
     }
 
     .member {
