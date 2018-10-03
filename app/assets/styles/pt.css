@@ -7,20 +7,20 @@
 body {
     font-family: "Monserrat", sans-serif;
     font-size: 1em;
-    color: #fff;
+    color: #015249;
     max-width: 1920px;
-    background: #4abdac;
+    background-color: rgb(240, 240, 240);
 }
 
 h1 {
     font-family: "Oswald", sans-serif;
     font-size: 1.4em;
     font-weight: 200;
-    color: #f7b733;
+    color: #015249;
     padding-top: 1.5em;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #015249;
 }
 
 h2 {
@@ -41,7 +41,7 @@ p {
 }
 
 a {
-    color: #fff;
+    color: #015249;
     text-decoration: none;
 }
 
@@ -50,18 +50,18 @@ a {
 .header-container {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #dfdce3;
+    border-bottom: 0.1em solid #015249;
     padding: 2.3em 0;
 }
 
 .logo {
     margin-left: 5%;
-    text-shadow: 1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #015249;
     font-size: 1.2em;
 }
 
 .logo span {
-    color: #f7b733;
+    color: #57bc90;
 }
 
 nav {
@@ -72,22 +72,22 @@ header ul li {
     display: inline;
     padding: 0 1.4em 0 0;
     font-size: 0.9em;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #015249;
 }
 
 header ul li a {
     text-decoration: none;
-    color:#fff;
+    color: #015249;
 }
 
 li a.active {
-    color: #fff;
-    border-bottom: 2px solid #fc4a1a;
+    color: #015249;
+    border-bottom: 2px solid #015249;
     font-weight: 300;
 }
 
 li a:hover {
-    color: #fc4a1a;
+    color: #57bc90;
 }
 
 .band-img {
@@ -96,7 +96,7 @@ li a:hover {
     top: 0;
     width: 100%;
     height: auto;
-    outline: 0.1em solid #fc4a1a;
+    border-bottom: 0.1em solid #015249;
 }
 
 .band-img--wrapper {
@@ -111,6 +111,7 @@ li a:hover {
 
 .bio-container {
     padding: 0 1.5em;
+    color: #015249;
 }
 
 /* band section grid */
@@ -130,30 +131,30 @@ li a:hover {
 .member-img {
     display: block;
     width: 47vw;
-    border: 0.2em solid #fff;
+    border: 0.2em solid #015249;
     border-radius: 50%;
 }
 
 .band-info {
     margin-top: 13px;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #015249;
 }
 
 .band-info h3 span {
-    color:#f7b733;
+    color:#57bc90;
 }
 
 .band-info p {
     font-size: 0.85em;
     font-weight: 500;
     margin-top: 2px;
-    color: #fff;
+    color: #015249;
 }
 
 /* disco grid */
 .disco-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     margin-top: 30px;
     justify-content: center;
@@ -174,18 +175,19 @@ li a:hover {
 footer {
     padding: 2.0em;
     text-align: center;
+    background-color: #015249;
 }
 
 footer p {
     font-size: 0.7em;
     font-weight: 300;
-    color: #E7DFDD;
+    color: rgb(240, 240, 240);
     line-height: 130%;
 }
 
 footer p a {
     text-decoration: none;
-    color: #E7DFDD;
+    color: #57bc90;
 }
 
 .footer--text {
@@ -196,7 +198,7 @@ footer p a {
 }
 
 .social-icons a {
-    color: #A239CA;
+    color: #57bc90;
     text-decoration: none;
     padding-right: 10px;
 }
@@ -210,7 +212,7 @@ footer p a {
 }
 
 .to-top i {
-    color: #A239CA;
+    color: #57bc90;
     padding: 0.2em;
 }
 
@@ -238,7 +240,7 @@ footer p a {
     }
 
     .disco-grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
         margin-top: 54px;
     }
 
@@ -284,7 +286,8 @@ footer p a {
     }
 }
 
-@media screen and (min-width : 1200px) {
+@media screen and (min-width : 1920px) {
+
     body {
         max-width: 1920px;
         margin: auto;
@@ -312,6 +315,10 @@ footer p a {
 
     .album-img {
         width: 370px;
+    }
+
+    .disco-grid {
+        grid-template-columns: 20% 20% 20% 20% 20%;
     }
 
     footer p {
