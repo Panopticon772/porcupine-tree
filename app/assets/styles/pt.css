@@ -173,7 +173,6 @@ li a:hover {
 
 /* footer */
 footer {
-    padding: 2.0em;
     text-align: center;
     background-color: #015249;
 }
@@ -194,7 +193,16 @@ footer p a {
     margin: 1.0em;
 }
 
+.footer--text-name {
+    font-size: 0.9em;
+}
+
+.footer--text a:hover {
+    color: #97c5b1;
+}
+
 .social-icons {
+    padding-bottom: 1.0em;
 }
 
 .social-icons a {
@@ -203,23 +211,62 @@ footer p a {
     padding-right: 10px;
 }
 
+.social-icons a:hover {
+    color: #97c5b1;
+}
+
 #scroll {
     cursor: pointer;
 }
 
 .to-top {
-
+    background-color: #57bc90;
+    width: 100%;
+    padding: 0.8em;
 }
 
-.to-top i {
-    color: #57bc90;
-    padding: 0.2em;
+.to-top:hover {
+    background-color: #71be9d;
 }
 
 /* media queries */
 
 /* navbar when screen is larger than 640px */
 @media screen and (min-width : 640px) {
+    h1 {
+        padding-top: 3em;
+        font-size: 1.6em;
+    }
+
+    h3 {
+        /* font-size: 1.1em; mobile */
+        font-size: 1.2em;
+    }
+
+    p {
+        /* font-size: 0.95em; mobile */
+        font-size: 0.95em;
+    }
+
+    nav {
+        align-self: center;
+        margin: 0 0.8em 0 0;
+    }
+
+    header ul li {
+        font-size: 1.1em;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 2.3em;
+        font-size: 1.5em;
+    }
+
     .band-grid {
         grid-template-columns: 50% 50%;
         margin-top: 54px;
@@ -239,13 +286,6 @@ footer p a {
     .member:hover {
         transform: scale(1.1);
     }
-
-    /* .member-img {
-        display: block;
-        width: 47vw;
-        border: 0.2em solid #015249;
-        border-radius: 50%;
-    } */
 
     .member-img {
         width: 31vw;
@@ -271,38 +311,8 @@ footer p a {
         width: 31vw;
     }
 
-    h1 {
-        padding-top: 3em;
-        font-size: 1.6em;
-    }
-
-    h3 {
-        /* font-size: 1.1em; mobile */
-        font-size: 1.2em;
-    }
-
-    p {
-        /* font-size: 0.95em; mobile */
-        font-size: 0.95em;
-    }
-
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logo {
-        margin-left: 2.3em;
-        font-size: 1.5em;
-    }
-
-    nav {
-        align-self: center;
-        margin: 0 0.8em 0 0;
-    }
-
-    header ul li {
-        font-size: 1.1em;
+    .footer--text-name {
+        font-size: 0.9em;
     }
 }
 
@@ -358,6 +368,10 @@ footer p a {
 
     .disco-grid {
         grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .footer--text-name {
+        font-size: 1.1em;
     }
 
     footer p {
