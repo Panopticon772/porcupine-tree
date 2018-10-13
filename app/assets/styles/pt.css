@@ -106,11 +106,10 @@ li a:hover {
 
 /* bio section */
 .bio-title {
-    padding-bottom: 1.0em;
 }
 
 .bio-container {
-    padding: 0 1.5em;
+    padding: 1.5em 1.5em 0;
     color: #015249;
 }
 
@@ -158,6 +157,7 @@ li a:hover {
     grid-template-rows: auto;
     margin-top: 30px;
     justify-content: center;
+    margin-bottom: 1.2em;
 }
 
 .album {
@@ -179,10 +179,10 @@ footer {
 }
 
 footer p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 300;
     color: rgb(240, 240, 240);
-    line-height: 130%;
+    line-height: 1.5em;
 }
 
 footer p a {
@@ -191,7 +191,7 @@ footer p a {
 }
 
 .footer--text {
-    padding: 1.1em;
+    margin: 1.0em;
 }
 
 .social-icons {
@@ -218,11 +218,16 @@ footer p a {
 
 /* media queries */
 
-/* navbar when screen is larger than 600px */
+/* navbar when screen is larger than 640px */
 @media screen and (min-width : 640px) {
     .band-grid {
         grid-template-columns: 50% 50%;
         margin-top: 54px;
+    }
+
+    .band-info p {
+        /* font-size: 0.85em; mobile */
+        font-size: 0.95em;
     }
 
     .member {
@@ -235,6 +240,13 @@ footer p a {
         transform: scale(1.1);
     }
 
+    /* .member-img {
+        display: block;
+        width: 47vw;
+        border: 0.2em solid #015249;
+        border-radius: 50%;
+    } */
+
     .member-img {
         width: 31vw;
     }
@@ -242,6 +254,7 @@ footer p a {
     .disco-grid {
         grid-template-columns: 33.3% 33.3% 33.3%;
         margin-top: 54px;
+        margin-bottom: 0.2em;
     }
 
     .album {
@@ -260,10 +273,17 @@ footer p a {
 
     h1 {
         padding-top: 3em;
+        font-size: 1.6em;
+    }
+
+    h3 {
+        /* font-size: 1.1em; mobile */
+        font-size: 1.2em;
     }
 
     p {
-        /* font-size: 1.0em; */
+        /* font-size: 0.95em; mobile */
+        font-size: 0.95em;
     }
 
     .header-container {
@@ -301,6 +321,25 @@ footer p a {
         font-size: 1.2em;
     }
 
+    header ul li {
+        /* font-size: 0.9em; ipad */
+        font-size: 1.2em;
+    }
+
+    .logo {
+        /* font-size: 1.5em; ipad */
+        font-size: 1.7em;
+    }
+
+    .bio-title {
+        margin-bottom: 0.5em;
+    }
+
+    .bio-container {
+        /* padding: 1.5em 1.5em 0; mobile/ipad */
+        margin: 0 0.8em 0;
+    }
+
     .member {
         width: 370px;
     }
@@ -323,5 +362,6 @@ footer p a {
 
     footer p {
         font-size: 1.0em;
+        width: 100%;
     }
 }
